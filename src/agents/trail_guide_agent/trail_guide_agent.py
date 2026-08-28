@@ -21,7 +21,7 @@ project_client = AIProjectClient(
 agent = project_client.agents.create_version(
     agent_name=os.environ["AGENT_NAME"],
     definition=PromptAgentDefinition(
-        model=os.getenv("MODEL_NAME", "gpt-4o"),  # Use lower-capacity gpt-4o by default
+        model="grok-4.3",  # Use lower-capacity gpt-4o by default
         instructions=instructions,
     ),
 )
