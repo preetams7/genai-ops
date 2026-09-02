@@ -65,20 +65,7 @@ param aiFoundryProjectName string = 'ai-project-${environmentName}'
 
 @description('List of model deployments')
 param aiProjectDeploymentsJson string = '''
-[
-  {
-    "name": "gpt-5.1",
-    "model": {
-      "format": "OpenAI",
-      "name": "gpt-5.1"
-    },
-    "sku": {
-      "name": "GlobalStandard",
-      "capacity": 10
-    }
-  }
-
-]
+[]
 '''
 
 @description('List of connections')
